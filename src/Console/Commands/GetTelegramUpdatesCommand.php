@@ -63,6 +63,7 @@ class GetTelegramUpdatesCommand extends Command
                     'name' => $update->message->from->first_name . ' ' . $update->message->from->last_name,
                     'username' => $update->message->from->username,
                     'message' => $update->message->text,
+                    'language_code' => $update->message->language_code,
                     'date' => Carbon::parse($update->message->date)->setTimezone(config('app.timezone'))->format('d-m-Y H:i'),
                 ];
 
@@ -76,6 +77,7 @@ class GetTelegramUpdatesCommand extends Command
                     'Name',
                     'Username',
                     'Message',
+                    'Language',
                     'Date'
                 ],
                 $updateData

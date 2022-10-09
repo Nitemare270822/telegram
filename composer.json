@@ -2,8 +2,10 @@
     "name": "sergio-item/telegram",
     "description": "Telegram bot utilities",
     "keywords": [
-        "sergio-item",
-        "telegram"
+        "laravel",
+        "telegram",
+        "telegram bot",
+        "telegram webhook"
     ],
     "homepage": "https://github.com/sergio-item/telegram",
     "license": "MIT",

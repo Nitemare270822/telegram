@@ -16,7 +16,11 @@ class TelegramServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        /*
+         * Load routes
+         */
+        $this->loadRoutesFrom(__DIR__ . '/../routes/telegram.php');
+
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('telegram.php'),
