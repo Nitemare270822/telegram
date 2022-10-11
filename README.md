@@ -13,6 +13,7 @@ You can install the package via composer:
 composer require sergio-item/telegram
 ```
 
+[Lumen installation](docs/lumen.md)
 
 Add Telegram variables to your `.env` file
 ```dotenv
